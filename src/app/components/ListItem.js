@@ -1,14 +1,16 @@
 import React from 'react'
 
-const ListItem = ({ heading, text, subText, index, style = "" }) => {
+const ListItem = ({ heading = "", text, subText, style = "" }) => {
 
     return (
         <>
 
-            <li className='font-semibold list-decimal text-2xl  leading-[36px] font-poppins'>
-                {heading}
-            </li>
-            {console.log('Hi' + index)}
+            {
+                heading.length > 0 && <li className='font-semibold list-decimal text-2xl  leading-[36px] font-poppins'>
+                    {heading}
+                </li>
+            }
+
             <ul className='list-disc leading-[27px]   pl-4 pr-4 font-poppins font-normal text-lg flex flex-col gap-4 py-2 '>
                 {
                     text.map((item, index) => (

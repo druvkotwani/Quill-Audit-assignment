@@ -112,6 +112,20 @@ const list2 = [
 
 ]
 
+const list3 = [
+  {
+    text: [
+      "Implementation of reentrancy protection mechanisms.",
+      "Accurate handling of decimal values using established libraries or best practices.",
+      "Revised calculations with proper scaling factors.",
+      "Fixing logic errors to ensure deposits and waiting periods are enforced.",
+      "Addressing referral system vulnerabilities to prevent abuse.",
+    ]
+  }
+]
+
+let listText3 = "All identified vulnerabilities were addressed by the CDP team, significantly enhancing the smart contract's security posture. Key improvements include"
+
 let listText = "Throughout the audit process, we unearthed a total of 33 issues, spanning from minor concerns to critical vulnerabilities. Among these, some of the critical issues identified were: Here's how we remediated them :"
 
 
@@ -128,9 +142,13 @@ export default function Home() {
       <RequestAudit />
       <About heading={aboutContent.heading1} text={aboutContent.text1} img={aboutContent.img1} />
       <About heading={aboutContent.heading2} text={aboutContent.text2} img={aboutContent.img2} />
-      <List heading={"CarpeDiem Pension's Journey Through our Audit Process"} list={list} />
+      <List mainheading={"CarpeDiem Pension's Journey Through our Audit Process"} list={list} />
       <About heading={aboutContent.heading4} text={aboutContent.text4} />
-      <List text={listText} heading={"Comprehensive Audit Discoveries and Remediation Strategies"} list={list2} style="lower-alpha" />
+      <List text={listText} mainheading={"Comprehensive Audit Discoveries and Remediation Strategies"} list={list2} style="lower-alpha" />
+      <List text={listText3} mainheading={"Remediation & Impact:"} list={list3} />
+
+
+
       <Footer />
     </main>
   );
