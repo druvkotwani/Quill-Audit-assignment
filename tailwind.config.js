@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'beforeafter-shadow': '0px 3px 12px 1px #5580DB36',
+      },
       colors: {
         'custom-black': '#000000',
         'custom-green': '#046202',
