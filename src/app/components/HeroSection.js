@@ -8,7 +8,7 @@ const HeroSection = () => {
             <h1 className='font-medium text-[16.84px] inline-block m-4  text-[#fff] leading-[24.33px] border-b-2 border-[#2D83EE] '>Case Studies</h1>
 
             <div className=''>
-                <div class=" bg-gradient-to-r from-custom-black to-custom-green flex items-center justify-center p-16" style={{ backgroundImage: "linear-gradient(140.54deg, var(--tw-gradient-stops))" }}>
+                <div className=" bg-gradient-to-r from-custom-black to-custom-green flex items-center justify-center p-16" style={{ backgroundImage: "linear-gradient(140.54deg, var(--tw-gradient-stops))" }}>
                     <Image src={'/images/heroimage.png'} width={326} height={104} alt="heroimage" />
                 </div>
 

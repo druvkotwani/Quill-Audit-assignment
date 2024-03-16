@@ -2,6 +2,7 @@ import About from "./components/About";
 import BeforeAfter from "./components/BeforeAfter";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
+import List from "./components/List";
 import ListItem from "./components/ListItem";
 import Navbar from "./components/Navbar";
 import RequestAudit from "./components/RequestAudit";
@@ -35,7 +36,7 @@ export default function Home() {
       <RequestAudit />
       <About heading={aboutContent.heading1} text={aboutContent.text1} img={aboutContent.img1} />
       <About heading={aboutContent.heading2} text={aboutContent.text2} img={aboutContent.img2} />
-      <ListItem />
+      <List />
       <Footer />
     </main>
   );
