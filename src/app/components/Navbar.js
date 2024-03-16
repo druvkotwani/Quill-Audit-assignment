@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div className="flex bg-[url('/images/herobg.png')] justify-between items-center px-4">
+        <div className="flex  justify-between items-center p-4">
             <Image src={'/images/quillauditsicon.png'} alt="logo" width={41} height={39} />
             <button className='font-medium text-[12.7px] leading-[17.4px] text-white  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] py-2 px-3 rounded-[4.39px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
                 Request An Audit

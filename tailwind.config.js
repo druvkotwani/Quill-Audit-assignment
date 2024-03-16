@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom-black': '#000000',
+        'custom-green': '#046202',
+      },
+      gradientColorStops: {
+        'custom-black': '4.97%',
+        'custom-green': '83.69%',
+      },
+      gradientColorStops: theme => theme('colors'),
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
