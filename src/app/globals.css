@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+main {
   font-family: "Jost", sans-serif;
 }
 
@@ -16,4 +16,8 @@ body {
 
 .font-inter {
   font-family: "Inter", sans-serif;
+}
+
+.font-jost {
+  font-family: "Jost", sans-serif;
 }

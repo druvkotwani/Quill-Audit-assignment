@@ -2,7 +2,7 @@ import React from 'react'
 
 const BeforeAfter = () => {
     return (
-        <div className='px-10 py-20 flex flex-col gap-20'>
+        <div className='px-6 py-16 pb-10 flex flex-col gap-20'>
             <div className='flex flex-col gap-6'>
                 <h1 className='bg-gradient-to-r from-[#FFABC9] to-[#FFABC9] font-bold font-inter text-xl px-1 '>Before QuillAudits</h1>
 
@@ -22,7 +22,7 @@ const BeforeAfter = () => {
             </div>
 
             <div className="bg-gradient-to-b from-[#7184FD] to-[#2D83EE] p-[1px] rounded shadow-beforeafter-shadow">
-                <div className="bg-white rounded px-8 py-4 flex flex-col gap-6">
+                <div className="bg-white rounded px-6 py-4 flex flex-col gap-6">
                     <div className='w-fit h-fit font-inter'>
                         <h1 className=' font-normal text-sm text-[#808080]  leading-[21px]  '>Headquarters</h1>
                         <p className='font-medium text-base leading-6 text-[#00000A]'>Switzerland</p>
