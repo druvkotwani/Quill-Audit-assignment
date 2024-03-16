@@ -143,6 +143,12 @@ const Footer = () => {
 
 
             </div>
+
+            {/* Images */}
+            <div className='flex justify-between items-center gap-6 px-4 '>
+                <Image src="/images/footer1.png" alt="footerImages" width={1110} height={150} />
+                <Image src="/images/footer2.png" alt="footerImages" width={1110} height={150} />
+            </div>
         </div>
     )
 }
