@@ -7,6 +7,7 @@ import ListItem from "./components/ListItem";
 import Navbar from "./components/Navbar";
 import RequestAudit from "./components/RequestAudit";
 import Subscribe from "./components/Subscribe";
+import Testimonila from "./components/Testimonila";
 
 const aboutContent = {
   heading1: "CarpeDiem Pension's Flexible, Blockchain-Enabled Future",
@@ -147,7 +148,7 @@ export default function Home() {
       <About heading={aboutContent.heading4} text={aboutContent.text4} />
       <List text={listText} mainheading={"Comprehensive Audit Discoveries and Remediation Strategies"} list={list2} style="lower-alpha" />
       <List text={listText3} mainheading={"Remediation & Impact:"} list={list3} />
-
+      <Testimonila />
       <Subscribe />
 
       <Footer />
