@@ -21,3 +21,11 @@ main {
 .font-jost {
   font-family: "Jost", sans-serif;
 }
+
+.bg-gradient {
+  background: linear-gradient(
+    89.44deg,
+    #edf2fe -2.02%,
+    rgba(217, 217, 217, 0) 103.68%
+  );
+}

@@ -136,7 +136,7 @@ export default function Home() {
     <main>
       <div className="bg-[url('/images/herobg.png')]">
 
-        <Navbar />
+        {/* <Navbar /> */}
         <HeroSection />
 
       </div>
