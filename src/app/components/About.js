@@ -8,7 +8,10 @@ const About = ({ heading, text, img }) => {
             <div className='flex flex-col gap-6'>
                 <p className='font-poppins text-lg leading-[27px] font-normal '>{text}</p>
                 {
-                    img && <Image src={img} alt="logo" width={382} height={187} className='rounded-md ' />
+                    img && <Image src={img} alt="logo" width={382} height={187} className='rounded-md sm:hidden' />
+                }
+                {
+                    img && <Image src={img} alt="logo" width={728} height={370} className='rounded-md hidden sm:block' />
                 }
             </div>
         </div>

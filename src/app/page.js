@@ -134,23 +134,45 @@ let listText = "Throughout the audit process, we unearthed a total of 33 issues,
 export default function Home() {
   return (
     <main>
-      <div className="bg-[url('/images/herobg.png')]">
+      <div className="bg-[url('/images/herobg.png')] sm:bg-[url('/images/hero-md-image.png')]">
 
-        {/* <Navbar /> */}
+        <Navbar />
         <HeroSection />
-
       </div>
+
       <BeforeAfter />
       <RequestAudit />
-      <About heading={aboutContent.heading1} text={aboutContent.text1} img={aboutContent.img1} />
-      <About heading={aboutContent.heading2} text={aboutContent.text2} img={aboutContent.img2} />
-      <List mainheading={"CarpeDiem Pension's Journey Through our Audit Process"} list={list} />
-      <About heading={aboutContent.heading4} text={aboutContent.text4} />
-      <List text={listText} mainheading={"Comprehensive Audit Discoveries and Remediation Strategies"} list={list2} style="lower-alpha" />
-      <List text={listText3} mainheading={"Remediation & Impact:"} list={list3} />
-      <Testimonila />
-      <Subscribe />
 
+      <div className="sm:grid grid-cols-5 sm:px-4 md:px-8 lg:px-16 gap-6 bg-white my-8">
+
+        <div className="col-start-1 col-end-4 py-10 sm:px-4 lg:px-8  ">
+          <p className='font-poppins text-lg leading-[27px] font-normal  hidden sm:block px-4'>
+            Carpe Diem Pension, on Pulse blockchain, redefines retirement with a self-managed, inclusive, globally portable fund. Unique for its token burn mechanism, it ensures a sustainable 4.32% inflation payout. With $143.11k and 41.06% of CDP already burned, it serves 35 users globally.
+          </p>
+          <About heading={aboutContent.heading1} text={aboutContent.text1} img={aboutContent.img1} />
+          <About heading={aboutContent.heading2} text={aboutContent.text2} img={aboutContent.img2} />
+          <List mainheading={"CarpeDiem Pension's Journey Through our Audit Process"} list={list} />
+          <About heading={aboutContent.heading4} text={aboutContent.text4} />
+          <List text={listText} mainheading={"Comprehensive Audit Discoveries and Remediation Strategies"} list={list2} style="lower-alpha" />
+          <List text={listText3} mainheading={"Remediation & Impact:"} list={list3} />
+          <Testimonila />
+        </div>
+
+        <div className=" bg-gradient-to-b col-start-4 sm:w-[240px] md:w-[300px] lg:w-[370px]  h-[170px] mt-[45%]  from-[#7184FD] to-[#2D83EE] p-[0.5px] py-[1px] sm:pr-[1px] rounded shadow-beforeafter-shadow hidden sm:flex items-center justify-center">
+          <div className="bg-white rounded px-6 py-4 flex flex-col gap-6 w-full h-full ">
+            <div className='w-fit h-fit font-inter'>
+              <h1 className=' font-normal text-sm text-[#808080]  leading-[21px]  '>Headquarters</h1>
+              <p className='font-medium text-base leading-6 text-[#00000A]'>Switzerland</p>
+            </div>
+            <div className='w-fit h-fit font-inter'>
+              <h1 className=' font-normal text-sm  leading-[21px]  text-[#808080] '>Chain</h1>
+              <p className='font-medium text-base leading-6 text-[#00000A]'>Pulse Blockchain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Subscribe />
       <Footer />
     </main>
   );

@@ -60,7 +60,7 @@ const HeroSection = () => {
                     Security and Strengthening
                     Trust at Carpe Diem Pension
                 </h2>
-                <h2 className='font-medium hidden sm:block text-4xl leading-[43.2px] tracking-[1%] text-[#fff] sm:pt-10 md:pt-8 sm:text-3xl md:text-4xl pr-0 lg:text-5xl sm:leading[57.6px] '>
+                <h2 className='font-medium hidden sm:block text-4xl leading-[43.2px] tracking-[1%] text-[#fff] sm:pt-10 md:pt-8 lg:pt-0 sm:text-3xl md:text-4xl pr-0 lg:text-5xl sm:leading[57.6px] '>
                     Securing Trust : Boosting
                     <br />
                     Security and Strengthening
