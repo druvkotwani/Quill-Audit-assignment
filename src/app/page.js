@@ -158,7 +158,7 @@ export default function Home() {
           <Testimonila />
         </div>
 
-        <div className=" bg-gradient-to-b col-start-4 sm:w-[240px] md:w-[300px] lg:w-[370px]  h-[170px] mt-[45%]  from-[#7184FD] to-[#2D83EE] p-[0.5px] py-[1px] sm:pr-[1px] rounded shadow-beforeafter-shadow hidden sm:flex items-center justify-center">
+        <div className=" bg-gradient-to-b col-start-4 sm:w-[240px] md:w-[300px] lg:w-[370px]  h-[170px] mt-[45%]  from-[#7184FD] to-[#2D83EE] p-[0.5px] py-[0.5px] sm:pr-[0.5px] rounded shadow-beforeafter-shadow hidden sm:flex items-center justify-center">
           <div className="bg-white rounded px-6 py-4 flex flex-col gap-6 w-full h-full ">
             <div className='w-fit h-fit font-inter'>
               <h1 className=' font-normal text-sm text-[#808080]  leading-[21px]  '>Headquarters</h1>

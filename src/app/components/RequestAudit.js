@@ -14,7 +14,7 @@ const RequestAudit = () => {
                 See how QuillAudits is a trusted partner in <br />
                 1000+ Audit stories</h1>
 
-            <button className='cursor-pointer font-medium  text-[20px] leading-[30px] text-white  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] py-2 px-6 rounded-[4.39px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+            <button className='cursor-pointer font-medium  text-[20px] leading-[30px] text-white  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] py-2 px-6 rounded-[6px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)] hover:scale-105 transform transition-transform duration-300 '>
                 Request An Audit
             </button>
             <p className='font-poppins text-lg leading-[27px] font-normal  sm:hidden'>

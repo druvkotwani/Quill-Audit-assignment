@@ -18,16 +18,16 @@ const Navbar = () => {
                 <div className='flex justify-between items-center border-b-2 pb-4 border-b-[#8a8a8a] border-opacity-15'>
                     <Image src={'/images/QuillAudits.png'} alt="logo" width={217} height={43} />
 
-                    <ul className='flex items-center justify-center gap-6 leading-[32.13px] text-[19.42px] text-white'>
+                    {/* <ul className='flex items-center justify-center gap-6 leading-[32.13px] text-[19.42px] text-white'>
                         <li className='cursor-pointer'>Services</li>
                         <li className='cursor-pointer'>Pricing</li>
                         <li className='cursor-pointer'>Our Audits</li>
                         <li className='cursor-pointer'>Tools</li>
                         <li className='cursor-pointer'>Resources</li>
                         <li className='cursor-pointer'>Refer-Earn-Secure</li>
-                    </ul>
+                    </ul> */}
 
-                    <button className='font-medium leading-[32.13px] text-[19.42px] text-white  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] py-2 px-3 rounded-[4.39px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                    <button className='font-medium leading-[32.13px] text-[19.42px] text-white  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] py-2 rounded-lg bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)] hover:scale-105 transform transition-transform duration-300 px-4'>
                         Request An Audit
                     </button>
                 </div>
