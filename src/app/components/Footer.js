@@ -263,16 +263,16 @@ const Footer = () => {
                 <h1 className='font-medium text-[16.84px] inline-block text-[#fff] w-fit h-fit leading-[24.33px] border-b-2 border-[#2D83EE] '>Our Programmes</h1>
 
                 <div className='xl:flex flex text-[#fff] lg:grid grid-cols-3 font-medium txt-[16.52px] leading-[23px] gap-4 '>
-                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-3 rounded-[3.86px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-4 rounded-[3.86px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
                         Refer-Earn-Secure
                     </div>
-                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-3 rounded-[3.86px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-4 rounded-[3.86px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
                         WAGSI Grants
                     </div>
-                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-3 rounded-[3.86px]  bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-4 rounded-[3.86px]  bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
                         Ambassador Program
                     </div>
-                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] p-2 rounded-[3.86px] lg:px-3 bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] p-2 rounded-[3.86px] lg:px-4 bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
                         Partnership Program
                     </div>
                 </div>
