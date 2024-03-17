@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className="bg-[url('/images/footerBg.png')] px-4 lg:px-16 flex flex-col gap-8">
+        <div className="absolute bg-[url('/images/footerBg.png')] px-4 lg:px-16 flex flex-col gap-8">
 
             {/* Logo */}
             <div className='flex flex-col w-fit h-fit mx-auto sm:mx-0 mt-8'>
@@ -144,7 +144,7 @@ const Footer = () => {
             </div>
 
             {/* Desktop */}
-            <div className='sm:grid grid-cols-5 gap-4 hidden '>
+            <div className='sm:grid sm:grid-cols-3 lg:grid-cols-5  sm:gap-4 lg:gap-8 hidden '>
                 <div className='flex flex-col gap-3 w-fit h-fit '>
                     <div>
                         <h1 className='font-medium text-[16.84px] inline-block text-[#fff] leading-[24.33px] border-b-2 border-[#2D83EE] '>More About Quill</h1>
@@ -259,8 +259,26 @@ const Footer = () => {
 
             </div>
 
+            <div className='sm:flex flex-col hidden gap-4 w-fit h-fit  lg:left-[40%]   bottom-[9rem] lg:relative'>
+                <h1 className='font-medium text-[16.84px] inline-block text-[#fff] w-fit h-fit leading-[24.33px] border-b-2 border-[#2D83EE] '>Our Programmes</h1>
 
-            <div className='flex flex-col sm:flex-row justify-between gap-6 sm:gap-4'>
+                <div className='xl:flex flex text-[#fff] lg:grid grid-cols-3 font-medium txt-[16.52px] leading-[23px] gap-4 '>
+                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-3 rounded-[3.86px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                        Refer-Earn-Secure
+                    </div>
+                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-3 rounded-[3.86px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                        WAGSI Grants
+                    </div>
+                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300   text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 lg:px-3 rounded-[3.86px]  bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                        Ambassador Program
+                    </div>
+                    <div className='cursor-pointer hover:scale-105 transform transition-transform duration-300  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] p-2 rounded-[3.86px] lg:px-3 bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
+                        Partnership Program
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex sm:flex-row flex-col justify-between gap-6 sm:gap-4'>
                 {/* Images */}
                 <div className='flex justify-between sm:justify-center sm:w-fit sm:h-fit items-center gap-6 px-4 sm:px-0 '>
                     <Image src="/images/footer1.png" alt="footerImages" className='sm:w-[200px] sm:h-[50px]' width={1110} height={150} />
@@ -284,9 +302,9 @@ const Footer = () => {
                 <h1 className='text-center'>Privacy Policy</h1>
                 <p className='font-normal text-[12.86px] text-center '>All Rights Reserved. © Copyright 2023. QuillAudits - LLC</p>
             </div >
-            <div className='text-[#fff] font-medium text-[13.86px] leading-[20.03px] border-t border-t-[#F1F1F180] flex justify-between flex-row gap-2 py-4 mb-4'>
+            <div className='text-[#fff] font-medium text-[13.86px]  hidden leading-[20.03px] border-t border-t-[#F1F1F180] sm:flex justify-between flex-row gap-2 py-4 mb-4'>
                 <p className='font-normal text-[12.86px] text-center '>All Rights Reserved. © Copyright 2023. QuillAudits - LLC</p>
-                <h1 className='text-center'>Privacy Policy</h1>
+                <h1 className='text-center cursor-pointer hover:text-gray-300 w-fit h-fit'>Privacy Policy</h1>
             </div>
         </div>
     )
