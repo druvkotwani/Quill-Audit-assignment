@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className="absolute bg-[url('/images/footerBg.png')] px-4 lg:px-16 flex flex-col gap-8">
+        <div className="absolute bg-[url('/images/footerBg.png')] sm:bg-[url('/images/footer-md-image.png')] px-4 lg:px-16 flex flex-col gap-8">
 
             {/* Logo */}
             <div className='flex flex-col w-fit h-fit mx-auto sm:mx-0 mt-8'>
