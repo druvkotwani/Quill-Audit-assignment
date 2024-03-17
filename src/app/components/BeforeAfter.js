@@ -2,7 +2,7 @@ import React from 'react'
 
 const BeforeAfter = () => {
     return (
-        <div className='px-6 py-16 pb-10 flex flex-col sm:flex-row lg:px-[20%] sm:px-[5%] md:px-[10%]  gap-20 sm:gap-0'>
+        <div className='px-6 py-16 pb-10 flex flex-col sm:flex-row xl:px-[20%] sm:px-[5%] md:px-[10%] ld:px-[13%] gap-20 sm:gap-0'>
             <div className='flex flex-col gap-6 sm:pr-10 md:pr-20'>
                 <h1 className='bg-gradient-to-r from-[#FFABC9] to-[#FFABC9] font-bold font-inter text-xl px-1 '>Before QuillAudits</h1>
 
@@ -15,9 +15,9 @@ const BeforeAfter = () => {
             <div className='flex flex-col gap-6 sm:border-l-2 sm:pl-10 md:pl-20'>
                 <h1 className='bg-[#ABCDFF] font-bold font-inter text-xl px-1 '>After QuillAudits</h1>
 
-                <div className='font-poppins font-normal text-lg leading-[24px] flex flex-col gap-4 sm:gap-10'>
+                <div className='font-poppins font-normal text-lg leading-[24px] flex flex-col gap-4 sm:gap-12'>
                     <p className=''>Implementation of reentrancy protection mechanisms.</p>
-                    <p className=''>Ensure precision in decimal handling with standard libraries, recalculate accurately, fix logic errors, and secure referral systems against exploitation.</p>
+                    <p className='  '>Ensure precision in decimal handling with standard libraries, recalculate accurately, fix logic errors, and secure referral systems against exploitation.</p>
                 </div>
             </div>
 
