@@ -3,16 +3,16 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className="bg-[url('/images/footerBg.png')] px-4 flex flex-col gap-8">
+        <div className="bg-[url('/images/footerBg.png')] px-4 lg:px-16 flex flex-col gap-8">
 
             {/* Logo */}
-            <div className='flex flex-col w-fit h-fit mx-auto mt-8'>
+            <div className='flex flex-col w-fit h-fit mx-auto sm:mx-0 mt-8'>
                 <Image src="/images/QuillAudits.png" alt="logo" width={250} height={23} />
                 <p className='font-normal text-sm text-right text-[#eaeaea] text-[12.94px]  leading-[18.69px] '>Making Web3 a safer place</p>
             </div>
 
             {/* Boxes */}
-            <div className='grid grid-cols-2 text-[#fff] font-medium text-[13.52px] leading-[19px] gap-4'>
+            <div className='grid grid-cols-2 text-[#fff] font-medium text-[13.52px] leading-[19px] gap-4 sm:hidden'>
                 <div className='text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A]  p-2 rounded-[3.86px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
                     WAGSI Grants
                 </div>
@@ -28,7 +28,8 @@ const Footer = () => {
             </div>
 
             {/* Services */}
-            <div className='flex flex-wrap justify-between gap-4 px-4  '>
+            {/* Mobile */}
+            <div className='flex flex-wrap justify-between gap-4 px-4 sm:hidden '>
                 <div className='flex flex-col gap-3 w-fit h-fit '>
                     <div>
                         <h1 className='font-medium text-[16.84px] inline-block text-[#fff] leading-[24.33px] border-b-2       border-[#2D83EE] '>Audit Services</h1>
@@ -140,31 +141,152 @@ const Footer = () => {
 
 
                 </div>
+            </div>
+
+            {/* Desktop */}
+            <div className='sm:grid grid-cols-5 gap-4 hidden '>
+                <div className='flex flex-col gap-3 w-fit h-fit '>
+                    <div>
+                        <h1 className='font-medium text-[16.84px] inline-block text-[#fff] leading-[24.33px] border-b-2 border-[#2D83EE] '>More About Quill</h1>
+                    </div>
+
+                    <div className='text-[#F1F1F1] font-medium text-[13.1px] leading-[18.93px] flex flex-col gap-3'>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>About Us</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit '>FAQs</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Blockchains We Audit</p>
+                    </div>
+
+                    <div className='text-[#F1F1F1] text-[14.97px]  leading-[21.63px] flex flex-col justify-center items-start gap-2 mt-4'>
+                        <h1 className=' font-medium '>Contact Us:</h1>
+
+                        <div className=' font-normal flex flex-col gap-2 '>
+                            <p className='italic flex gap-2 items-center justify-start cursor-pointer hover:text-gray-300 w-fit h-fit'>
+                                {emailSVg()}
+                                <span className='border-b  '>audits@quillhash.com</span>
+                            </p>
+                            <p className='italic flex gap-2 items-center justify-start cursor-pointer hover:text-gray-300 w-fit h-fit'>
+                                {telegramSvg()}
+                                <span className='border-b '>t.me/quillaudits</span>
+                            </p>
+
+                            <p className='flex flex-col  gap-4 mt-4'>
+                                <span className='flex gap-2 justify-start items-center font-medium '>{locationSvg()}Our Location:</span>
+                                <span className='font-normal '>
+                                    Office 104/105 Level 1, Emaar Square, Building 4 Sheikh Mohammed Bin Rashid Boulevard Downtown Dubai, United Arab Emirates P.O box : 416654
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div className='flex flex-col gap-3 w-fit h-fit '>
+                    <div>
+                        <h1 className='font-medium text-[16.84px] inline-block text-[#fff] leading-[24.33px] border-b-2       border-[#2D83EE] '>Audit Services</h1>
+                    </div>
+
+                    <div className='text-[#F1F1F1] font-medium text-[13.1px] leading-[18.93px] flex flex-col gap-3'>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Ethereum Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Polygon Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>BSC Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Solana Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>NEAR Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Algorand Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Tezos Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Hyperledger Fabric Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>L1 Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Polkadot Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Wallet Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>ZkSync Audit</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Starknet Audit</p>
+                    </div>
+                </div>
+
+                <div className='flex flex-col gap-3 w-fit h-fit   '>
+                    <div>
+                        <h1 className='font-medium text-[16.84px] inline-block text-[#fff] leading-[24.33px] border-b-2       border-[#2D83EE] '>Quill Ecosystem</h1>
+                    </div>
+
+                    <div className='text-[#F1F1F1] font-medium text-[13.1px] leading-[18.93px] flex flex-col gap-3 '>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>QuillAI</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>QuillCheck</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>QuillShield</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>QuillAcademy</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>QuillMonitor</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Web3Suggest</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Explore All Tools</p>
+                    </div>
+                </div>
+
+                <div className='flex flex-col gap-3 w-fit h-fit '>
+                    <div>
+                        <h1 className='font-medium text-[16.84px] inline-block text-[#fff] leading-[24.33px] border-b-2 border-[#2D83EE] '>Other Services</h1>
+                    </div>
+
+                    <div className='text-[#F1F1F1] font-medium text-[13.1px] leading-[18.93px] flex flex-col gap-3'>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Red Teaming</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>dApp Pentesting</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>DeFi Diligence</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>NFT Due Diligence</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Rug Pull Due Diligence</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Security Consultation</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Blockchain Forensics</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>KYC (Know Your Customer)</p>
+                    </div>
+                </div>
+
+                <div className='flex flex-col gap-3 w-fit h-fit '>
+                    <div>
+                        <h1 className='font-medium text-[16.84px] inline-block text-[#fff] leading-[24.33px] border-b-2 border-[#2D83EE] '>Quick Links</h1>
+                    </div>
+
+                    <div className='text-[#F1F1F1] font-medium text-[13.1px] leading-[18.93px] flex flex-col gap-3'>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Pricing</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Audit Process</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Our Audits</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Testimonials</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Security Synopsis</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Blog</p>
+                        <p className='cursor-pointer hover:text-gray-300 w-fit h-fit'>Clients</p>
+                        <p className='cursor-pointer w-fit h-fit'>
+                            <span className='hover:text-gray-300'>Careers</span>
+                            <button className='bg-[#2d83ee] hover:text-white p-1 px-2 ml-2 rounded-md '>Hiring</button>
+                        </p>
+                    </div>
+                </div>
 
 
             </div>
 
-            {/* Images */}
-            <div className='flex justify-between items-center gap-6 px-4 '>
-                <Image src="/images/footer1.png" alt="footerImages" width={1110} height={150} />
-                <Image src="/images/footer2.png" alt="footerImages" width={1110} height={150} />
-            </div>
 
-            {/* Social Media */}
-            <div className='flex gap-2 justify-between items-center px-4  '>
-                <span>{twitter()}</span>
-                <span>{linkedin()}</span>
-                <span>{telegram()}</span>
-                <span>{reddit()}</span>
-                <span>{medium()}</span>
-                <span>{discord()}</span>
-                <span>{youtube()}</span>
+            <div className='flex flex-col sm:flex-row justify-between gap-6 sm:gap-4'>
+                {/* Images */}
+                <div className='flex justify-between sm:justify-center sm:w-fit sm:h-fit items-center gap-6 px-4 sm:px-0 '>
+                    <Image src="/images/footer1.png" alt="footerImages" className='sm:w-[200px] sm:h-[50px]' width={1110} height={150} />
+                    <Image src="/images/footer2.png" alt="footerImages" className='sm:w-[180px] sm:h-[50px]' width={1110} height={150} />
+                </div>
+
+                {/* Social Media */}
+                <div className='flex gap-2 sm:gap-6 justify-between items-center px-4 sm:px-0  '>
+                    <span className='cursor-pointer transform transition-transform duration-300 hover:scale-125 '>{twitter()}</span>
+                    <span className='cursor-pointer transform transition-transform duration-300 hover:scale-125 '>{linkedin()}</span>
+                    <span className='cursor-pointer transform transition-transform duration-300 hover:scale-125 '>{telegram()}</span>
+                    <span className='cursor-pointer transform transition-transform duration-300 hover:scale-125 '>{reddit()}</span>
+                    <span className='cursor-pointer transform transition-transform duration-300 hover:scale-125 '>{medium()}</span>
+                    <span className='cursor-pointer transform transition-transform duration-300 hover:scale-125 '>{discord()}</span>
+                    <span className='cursor-pointer transform transition-transform duration-300 hover:scale-125 '>{youtube()}</span>
+                </div>
             </div>
 
             {/* Privacy Policy */}
-            <div className='text-[#fff] font-medium text-[13.86px] leading-[20.03px] border-t border-t-[#F1F1F180] flex flex-col gap-2 py-4 my-4'>
+            <div className='text-[#fff] sm:hidden font-medium text-[13.86px] leading-[20.03px] border-t border-t-[#F1F1F180] flex flex-col gap-2 py-4 my-4'>
                 <h1 className='text-center'>Privacy Policy</h1>
                 <p className='font-normal text-[12.86px] text-center '>All Rights Reserved. © Copyright 2023. QuillAudits - LLC</p>
+            </div >
+            <div className='text-[#fff] font-medium text-[13.86px] leading-[20.03px] border-t border-t-[#F1F1F180] flex justify-between flex-row gap-2 py-4 mb-4'>
+                <p className='font-normal text-[12.86px] text-center '>All Rights Reserved. © Copyright 2023. QuillAudits - LLC</p>
+                <h1 className='text-center'>Privacy Policy</h1>
             </div>
         </div>
     )
