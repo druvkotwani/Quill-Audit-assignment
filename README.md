@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Assignment for Quill Audit
 
-## Getting Started
+This project is the assignment given to us by Quill Audit
 
-First, run the development server:
+## Screenshots
+![image](https://github.com/druvkotwani/Quill-Audit-assignment/assets/96691139/872ddde4-8749-4b5c-b59e-cd9b547a1ed7)
+![image](https://github.com/druvkotwani/Quill-Audit-assignment/assets/96691139/dea12d5f-f6d9-417a-a366-03a5e482c29e)
+![image](https://github.com/druvkotwani/Quill-Audit-assignment/assets/96691139/b67d724c-13f2-486b-aa17-f2cb2e208033)
+
+
+
+
+
+
+### Responsive [Mobile Devices]
+![image](https://github.com/druvkotwani/Quill-Audit-assignment/assets/96691139/80836e7f-32a0-4765-be94-0e845266e76f)
+![image](https://github.com/druvkotwani/Quill-Audit-assignment/assets/96691139/4985b647-f508-49fd-8dd9-8cb3ccd9c6e8)
+![image](https://github.com/druvkotwani/Quill-Audit-assignment/assets/96691139/7acea809-3e40-4686-99eb-f681d3dfa5ef)
+
+
+
+
+## Languages/Tools
+
+<a href="">
+    <img src="https://skillicons.dev/icons?i=tailwindcss,js,react,next,vercel" />
+  </a>
+
+## 👩🏽‍💻 Demo
+Check out the website: [Website](https://quillaudit-assignment-dhruvkotwani.vercel.app/)
+
+
+## 🚀 Running Frontend
+To run locally, run the following commands to run node modules and serve the website locally.
+```bash
+npm i
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+<hr/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Drop a ⭐ if you like this project.
