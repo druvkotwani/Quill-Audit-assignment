@@ -120,14 +120,15 @@ const Navbar = ({ hasbackground }) => {
             )}
 
             {/* Desktop */}
-            <div className='hidden sm:block  xl:px-[8%] py-4'>
+            <div className='hidden sm:block md:px-[4%] sm:px-[2%] lg:px-[8%] py-4'>
                 <div className='flex justify-between items-center border-b-2 pb-4 border-b-[#8a8a8a] border-opacity-15'>
-                    <Image src={'/images/QuillAudits.png'} alt="logo" width={217} height={43} />
+                    <Image src={'/images/QuillAudits.png'} alt="logo" className='lg:w-40 md:w-32 sm:hidden lg:block   ' width={217} height={43} />
+                    <Image src={'/images/quillauditsicon.png'} alt="logo" className='  lg:hidden sm:block  ' width={47} height={23} />
 
-                    <ul className='flex items-center justify-center gap-6 leading-[32.13px] text-[19.42px] text-white'>
+                    <ul className='flex items-center justify-center sm:gap-2 md:gap-3 xl:gap-6 sm:leading-[26.3px] xl:leading-[32.13px] sm:text-[14.5px]  xl:text-[19.42px] text-white'>
                         {
                             menuItems.map((item, index) => (
-                                <li key={index} className='cursor-pointer w-fit h-fit'>
+                                <li key={index} className='cursor-pointer w-fit h-fit '>
                                     <span onClick={() => handleShow(index)} className='flex justify-start items-center gap-1'>{item.title} {item.items && downArrow()}</span>
                                     {item.items && show[index] && <ClickItem items={item.items} />}
                                 </li>
@@ -135,7 +136,7 @@ const Navbar = ({ hasbackground }) => {
                         }
                     </ul>
 
-                    <button className='font-medium leading-[32.13px] text-[19.42px] text-white  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] py-2 rounded-lg bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)] hover:scale-105 transform transition-transform duration-300 px-4'>
+                    <button className='cursor-pointer font-medium md:text-[15px] sm:text-[13px]  xl:text-[20px] leading-[30px] text-white  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] py-2 md:px-3 xl:px-6 rounded-[6px]  bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)] hover:scale-105 transform transition-transform duration-300 sm:px-2'>
                         Request An Audit
                     </button>
                 </div>
@@ -175,7 +176,7 @@ const HoveredItem = ({ items }) => {
                     <a
                         key={index}
                         href={item.link}
-                        className="w-fit h-fit block  text-left ml-4  py-2 text-lg leading-5 text-theme-purple hover:bg-gray-100 focus:outline-none focus:bg-gray-400 transition duration-150 ease-in-out"
+                        className="w-fit h-fit block  text-left ml-4  py-2 text-lg leading-5 text-theme-purple hover:text-gray-100 focus:outline-none  transition duration-150 ease-in-out"
                     >
                         {item.name}
                     </a>
@@ -187,7 +188,7 @@ const HoveredItem = ({ items }) => {
 }
 const ClickItem = ({ items }) => {
     return (
-        <div className={`peer-hover:block hover:block origin-top  absolute bg-[url('/images/footer-md-image.png')] px-8 rounded-md `}>
+        <div className={`peer-hover:block hover:block origin-top  absolute bg-[url('/images/footer-md-image.png')] px-12 py-2 rounded-md `}>
             <div className=" rounded-md  shadow-xs">
 
                 {items.map((item, index) => (
