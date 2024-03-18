@@ -8,7 +8,7 @@ const BeforeAfter = () => {
 
                 <div className='font-poppins font-normal text-lg leading-[24px] flex flex-col gap-4'>
                     <p className=''>Exploits like reentrancy and front-running can let attackers withdraw extra funds and manipulate transaction timing for unfair gains.</p>
-                    <p className=''>Vulnerabilities could allow users to mint CDP tokens or pension shares indefinitely, disrupting the system's economic balance.</p>
+                    <p className=''>Vulnerabilities could allow users to mint CDP tokens or pension shares indefinitely, disrupting the system&apos;s economic balance.</p>
                 </div>
             </div>
 
