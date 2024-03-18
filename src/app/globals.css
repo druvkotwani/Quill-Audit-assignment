@@ -29,3 +29,17 @@ main {
     rgba(217, 217, 217, 0) 103.68%
   );
 }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0.9;
+    transform: translateX(100vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.animate-fadeInRight {
+  animation: fadeInRight cubic-bezier(0, 0.55, 0.45, 1) 400ms;
+}

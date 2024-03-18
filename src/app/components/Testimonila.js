@@ -34,7 +34,7 @@ const Testimonila = () => {
                             {stars()}
                         </div>
                     </div>
-                    <Image src='/images/testimonial.png' alt='testimonial' width={150} height={75} className='rounded-lg ' />
+                    <Image src='/images/testimonial.png' alt='testimonial' width={170} height={95} className='rounded-lg ' />
                 </div>
 
             </div>
