@@ -1,3 +1,4 @@
+import Tweet from "@/app/components/Tweet";
 import About from "../../components/About";
 import BeforeAfter from "../../components/BeforeAfter";
 import Footer from "../../components/Footer";
@@ -155,6 +156,10 @@ export default function Home() {
                     <About heading={aboutContent.heading4} text={aboutContent.text4} />
                     <List text={listText} mainheading={"Comprehensive Audit Discoveries and Remediation Strategies"} list={list2} style="lower-alpha" />
                     <List text={listText3} mainheading={"Remediation & Impact:"} list={list3} />
+                    <p className='font-normal text-xl leading-[27px] text-[#00000A] px-6 hidden sm:block'>
+                        CDP smart contract audit revealed and fixed critical vulnerabilities, safeguarding funds and ensuring platform stability. This underscores the need for proactive security in blockchain projects, crucial for financial asset management. Through audits and issue resolution, CDP reinforces platform security, bolstering user trust.
+                    </p>
+                    <Tweet />
                     <Testimonila />
                 </div>
 
