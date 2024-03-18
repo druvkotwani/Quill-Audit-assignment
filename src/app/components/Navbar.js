@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 const Navbar = ({ hasbackground }) => {
@@ -64,7 +65,9 @@ const Navbar = ({ hasbackground }) => {
         <>
             {/* Mobile devices */}
             <div className="flex  justify-between items-center p-4 sm:hidden">
-                <Image src={'/images/quillauditsicon.png'} alt="logo" width={41} height={39} />
+                <Link href='/'>
+                    <Image src={'/images/quillauditsicon.png'} alt="logo" width={41} height={39} />
+                </Link>
                 <button className='font-medium text-[12.7px] leading-[17.4px] text-white  text-center shadow-[0px_9.655799865722656px_14.483699798583984px_-2.896739959716797px_#0000001A] py-2 px-3 rounded-[4.39px] bg-[linear-gradient(267.25deg,_#7184FD_20%,_#3F7AF0_50%,_#4F37EE_100%)]'>
                     Request An Audit
                 </button>
@@ -122,8 +125,12 @@ const Navbar = ({ hasbackground }) => {
             {/* Desktop */}
             <div className='hidden sm:block md:px-[4%] sm:px-[2%] lg:px-[8%] py-4'>
                 <div className='flex justify-between items-center border-b-2 pb-4 border-b-[#8a8a8a] border-opacity-15'>
-                    <Image src={'/images/QuillAudits.png'} alt="logo" className='lg:w-40 md:w-32 sm:hidden lg:block   ' width={217} height={43} />
-                    <Image src={'/images/quillauditsicon.png'} alt="logo" className='  lg:hidden sm:block  ' width={47} height={23} />
+                    <Link href='/'>
+                        <Image src={'/images/QuillAudits.png'} alt="logo" className='lg:w-40 md:w-32 sm:hidden lg:block   ' width={217} height={43} />
+                    </Link>
+                    <Link href='/'>
+                        <Image src={'/images/quillauditsicon.png'} alt="logo" className='  lg:hidden sm:block  ' width={47} height={23} />
+                    </Link>
 
                     <ul className='flex items-center justify-center sm:gap-2 md:gap-3 xl:gap-6 sm:leading-[26.3px] xl:leading-[32.13px] sm:text-[14.5px]  xl:text-[19.42px] text-white'>
                         {

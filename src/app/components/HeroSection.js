@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const HeroSection = () => {
@@ -44,11 +45,15 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <p className='text-xm text-start leading-[27.72px] text-[#fff] font-medium mt-8 ml-4 hidden sm:block'>
-                    <span className='cursor-pointer opacity-[46%]'> QuillAudits {"-->"}</span>
-
-                    <span className='cursor-pointer opacity-[46%]'> Resources  {"-->"}</span>
-
-                    <span className='cursor-pointer'> Case Studies </span>
+                    <Link href='/'>
+                        <span className='cursor-pointer opacity-[46%]'> QuillAudits {"-->"}</span>
+                    </Link>
+                    <Link href='/resources'>
+                        <span className='cursor-pointer opacity-[46%]'> Resources  {"-->"}</span>
+                    </Link>
+                    <Link href='/resources/case-studies'>
+                        <span className='cursor-pointer '> Case Studies </span>
+                    </Link>
 
                 </p>
             </div>
@@ -74,13 +79,21 @@ const HeroSection = () => {
                     boosting security and user trust in digital pensions.
                 </p>
                 <p className='text-xs text-start leading-[27.72px] text-[#fff] font-medium mt-8 sm:hidden'>
-                    <span className='cursor-ponter'> QuillAudits </span>
+                    <Link href='/'>
+                        <span className='cursor-ponter'> QuillAudits </span>
+                    </Link>
                     {"-->"}
-                    <span className='cursor-ponter'> Resources </span>
+                    <Link href='/resources'>
+                        <span className='cursor-ponter'> Resources </span>
+                    </Link>
                     {"-->"}
-                    <span className='cursor-ponter'> Case Studies </span>
+                    <Link href='/resources/case-studies'>
+                        <span className='cursor-ponter'> Case Studies </span>
+                    </Link>
                     {"->"}
-                    <span className='cursor-ponter'> kucoin</span>
+                    <Link href='/resources/case-studies'>
+                        <span className='cursor-ponter'> kucoin</span>
+                    </Link>
                 </p>
             </div>
 
