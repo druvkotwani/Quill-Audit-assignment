@@ -44,11 +44,11 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <p className='text-xm text-start leading-[27.72px] text-[#fff] font-medium mt-8 ml-4 hidden sm:block'>
-                    <span className='cursor-ponter opacity-[46%]'> QuillAudits {"-->"}</span>
+                    <span className='cursor-pointer opacity-[46%]'> QuillAudits {"-->"}</span>
 
-                    <span className='cursor-ponter opacity-[46%]'> Resources  {"-->"}</span>
+                    <span className='cursor-pointer opacity-[46%]'> Resources  {"-->"}</span>
 
-                    <span className='cursor-ponter'> Case Studies </span>
+                    <span className='cursor-pointer'> Case Studies </span>
 
                 </p>
             </div>
